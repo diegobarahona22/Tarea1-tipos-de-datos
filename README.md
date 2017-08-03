@@ -1,2 +1,67 @@
 # Tarea1-tipos-de-datos
-#include &lt;iostream> #include &lt;limits.h> #include &lt;float.h>   using namespace std;   int main() {      int n, opcion;      do     {    /* MENU */         cout &lt;&lt; "\n ======== MENU==========";                  cout &lt;&lt; "\n   1. Minimo y maximo de char:";         cout &lt;&lt; "\n   2. Minimo y maximo de short int:";         cout &lt;&lt; "\n   3. Minimo y maximo de int:";         cout &lt;&lt; "\n   4. Minimo y maximo de Long int:";         cout &lt;&lt; "\n   5. Minimo y maximo de unsigned char:";         cout &lt;&lt; "\n   6. Minimo y maximo de unsigned short int:";         cout &lt;&lt; "\n   7. Minimo y maximo de unsigned int:";         cout &lt;&lt; "\n   8. Minimo y maximo de unsigned Long int:";         cout &lt;&lt; "\n   9. Minimo y maximo de float:";         cout &lt;&lt; "\n   10. Minimo y maximo de double:";         cout &lt;&lt; "\n   11. Minimo y maximo de Long double:";                 cout &lt;&lt;"\n   12. Salir.";         cout &lt;&lt;"\n\n   Introduzca opcion (1-12): ";          cin>> opcion ;          /* Inicio */          switch ( opcion )         {             case 1: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"char\" ...: "&lt;&lt;"MIN:"&lt;&lt;CHAR_MIN&lt;&lt; "   MAX:"&lt;&lt; CHAR_MAX&lt;&lt;endl; break;              case 2: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"short int\" ...: "&lt;&lt;"MIN:"&lt;&lt;SHRT_MIN&lt;&lt; "   MAX:"&lt;&lt; SHRT_MAX&lt;&lt;endl; break;              case 3: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"int\" ...: "&lt;&lt;"MIN:"&lt;&lt;INT_MIN&lt;&lt; "   MAX:"&lt;&lt; INT_MAX&lt;&lt;endl; break;                                  case 4: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"long int\" ...: "&lt;&lt;"MIN:"&lt;&lt;LONG_MIN&lt;&lt; "   MAX:"&lt;&lt; LONG_MAX&lt;&lt;endl; break;                          case 5: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"unsigned char\" ...: "&lt;&lt;"MIN:"&lt;&lt;"0"&lt;&lt; "   MAX:"&lt;&lt; UCHAR_MAX&lt;&lt;endl; break;                          case 6: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"unsigned short int\" ...: "&lt;&lt;"MIN:"&lt;&lt;"0"&lt;&lt; "   MAX:"&lt;&lt; USHRT_MAX&lt;&lt;endl; break;                                  case 7: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"unsigned int\" ...: "&lt;&lt;"MIN:"&lt;&lt;"0"&lt;&lt; "   MAX:"&lt;&lt; UINT_MAX&lt;&lt;endl; break;                                  case 8: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"unsigned Long int\" ...: "&lt;&lt;"MIN:"&lt;&lt;"0"&lt;&lt; "   MAX:"&lt;&lt; ULONG_MAX&lt;&lt;endl; break;                          case 9: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"float\" ...: "&lt;&lt;"MIN:"&lt;&lt;FLT_MIN&lt;&lt; "   MAX:"&lt;&lt; FLT_MAX&lt;&lt;endl; break;                                  case 10: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"double\" ...: "&lt;&lt;"MIN:"&lt;&lt;DBL_MIN&lt;&lt; "   MAX:"&lt;&lt; DBL_MAX&lt;&lt;endl; break;                                  case 11: cout&lt;&lt;"\n"&lt;&lt;"Minimo y maximo de \"long double\" ...: "&lt;&lt;"MIN:"&lt;&lt;LDBL_MIN&lt;&lt; "   MAX:"&lt;&lt; LDBL_MAX&lt;&lt;endl; break;          }           /* Fin */      } while ( opcion != 12 );      return 0; }
+#include <iostream>
+#include <limits.h>
+#include <float.h>
+
+
+using namespace std;
+
+
+int main()
+{
+
+    int n, opcion;
+
+    do
+    {    /* MENU */
+        cout << "\n ======== MENU==========";
+        
+        cout << "\n   1. Minimo y maximo de char:";
+        cout << "\n   2. Minimo y maximo de short int:";
+        cout << "\n   3. Minimo y maximo de int:";
+        cout << "\n   4. Minimo y maximo de Long int:";
+        cout << "\n   5. Minimo y maximo de unsigned char:";
+        cout << "\n   6. Minimo y maximo de unsigned short int:";
+        cout << "\n   7. Minimo y maximo de unsigned int:";
+        cout << "\n   8. Minimo y maximo de unsigned Long int:";
+        cout << "\n   9. Minimo y maximo de float:";
+        cout << "\n   10. Minimo y maximo de double:";
+        cout << "\n   11. Minimo y maximo de Long double:";        
+        cout <<"\n   12. Salir.";
+        cout <<"\n\n   Introduzca opcion (1-12): ";
+
+        cin>> opcion ;
+
+        /* Inicio */
+
+        switch ( opcion )
+        {
+            case 1: cout<<"\n"<<"Minimo y maximo de \"char\" ...: "<<"MIN:"<<CHAR_MIN<< "   MAX:"<< CHAR_MAX<<endl; break;
+
+            case 2: cout<<"\n"<<"Minimo y maximo de \"short int\" ...: "<<"MIN:"<<SHRT_MIN<< "   MAX:"<< SHRT_MAX<<endl; break;
+
+            case 3: cout<<"\n"<<"Minimo y maximo de \"int\" ...: "<<"MIN:"<<INT_MIN<< "   MAX:"<< INT_MAX<<endl; break;
+                    
+            case 4: cout<<"\n"<<"Minimo y maximo de \"long int\" ...: "<<"MIN:"<<LONG_MIN<< "   MAX:"<< LONG_MAX<<endl; break;
+            
+            case 5: cout<<"\n"<<"Minimo y maximo de \"unsigned char\" ...: "<<"MIN:"<<"0"<< "   MAX:"<< UCHAR_MAX<<endl; break;
+            
+            case 6: cout<<"\n"<<"Minimo y maximo de \"unsigned short int\" ...: "<<"MIN:"<<"0"<< "   MAX:"<< USHRT_MAX<<endl; break;
+                    
+            case 7: cout<<"\n"<<"Minimo y maximo de \"unsigned int\" ...: "<<"MIN:"<<"0"<< "   MAX:"<< UINT_MAX<<endl; break;
+                    
+            case 8: cout<<"\n"<<"Minimo y maximo de \"unsigned Long int\" ...: "<<"MIN:"<<"0"<< "   MAX:"<< ULONG_MAX<<endl; break;
+            
+            case 9: cout<<"\n"<<"Minimo y maximo de \"float\" ...: "<<"MIN:"<<FLT_MIN<< "   MAX:"<< FLT_MAX<<endl; break;
+                    
+            case 10: cout<<"\n"<<"Minimo y maximo de \"double\" ...: "<<"MIN:"<<DBL_MIN<< "   MAX:"<< DBL_MAX<<endl; break;
+                    
+            case 11: cout<<"\n"<<"Minimo y maximo de \"long double\" ...: "<<"MIN:"<<LDBL_MIN<< "   MAX:"<< LDBL_MAX<<endl; break;
+         }
+
+         /* Fin */
+
+    } while ( opcion != 12 );
+
+    return 0;
+}

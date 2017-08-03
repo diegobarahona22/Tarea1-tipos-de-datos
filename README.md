@@ -1,4 +1,3 @@
-# Tarea1-tipos-de-datos
 #include <iostream>
 #include <limits.h>
 #include <float.h>
